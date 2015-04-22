@@ -3,10 +3,10 @@ import re
 import codecs
 import urllib2
 
-ckey = "PcMAXyjrLClscb8P6CNHTwgCU"
-csecret = 'C4Enq7JvbFiMpOv00iQdnZ0JEPRvtFy2uzZBzvZY5GHtwb0Uk9'
-atoken = '3145110713-G9HFvOkdf1c7BzmK7IaJTm048DVD3TvgUM20zdb'
-asecret = 'VFcZ1whomwbl4IojkIf3krC6u71m7qMyh7Nm69wfjYUFK'
+ckey = "Consumer Key"
+csecret = 'Consumer Secret'
+atoken = 'Access Token'
+asecret = 'Access Secret'
 count = 0
 
 def internet_on():
