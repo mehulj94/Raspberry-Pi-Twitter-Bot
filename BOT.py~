@@ -3,8 +3,8 @@ import re
 import codecs
 import urllib2
 
-ckey = "PcMAXyjrLClscb8P6CNHTwgCU"
-csecret = 'C4Enq7JvbFiMpOv00iQdnZ0JEPRvtFy2uzZBzvZY5GHtwb0Uk9'
+ckey = "5GwwKpM2NvzXCpfn28saSk3CN"
+csecret = 'F7UKxhJLNyprK5mNV5bKSiNogvuLJ4X6klfF7LVhwHCRCAUMVk'
 atoken = '3145110713-G9HFvOkdf1c7BzmK7IaJTm048DVD3TvgUM20zdb'
 asecret = 'VFcZ1whomwbl4IojkIf3krC6u71m7qMyh7Nm69wfjYUFK'
 count = 0
@@ -28,8 +28,8 @@ quotes[count] = quotes[count].decode('ascii','ignore')
 
 
 if internet_on() == True:
-	if len(quotes[count]) <= 144:
-		api.update_status(status = quotes[count])
+	if len(quotes[count]) <= 136:
+		api.update_status(status = quotes[count]+'#quotes')
 		quotes = quotes[count+2:]
 	else:
 		quotes = quotes[count+2:]
