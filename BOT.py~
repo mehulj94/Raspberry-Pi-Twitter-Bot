@@ -29,7 +29,7 @@ quotes[count] = quotes[count].decode('ascii','ignore')
 
 if internet_on() == True:
 	if len(quotes[count]) <= 136:
-		api.update_status(status = quotes[count]+'#quotes')
+		api.update_status(status = quotes[count]+'#Quotes')
 		quotes = quotes[count+2:]
 	else:
 		quotes = quotes[count+2:]
