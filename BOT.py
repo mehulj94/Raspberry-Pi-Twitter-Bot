@@ -3,10 +3,10 @@ import re
 import codecs
 import urllib2
 
-ckey = "5GwwKpM2NvzXCpfn28saSk3CN"
-csecret = 'F7UKxhJLNyprK5mNV5bKSiNogvuLJ4X6klfF7LVhwHCRCAUMVk'
-atoken = '3145110713-G9HFvOkdf1c7BzmK7IaJTm048DVD3TvgUM20zdb'
-asecret = 'VFcZ1whomwbl4IojkIf3krC6u71m7qMyh7Nm69wfjYUFK'
+ckey = ''	#consumer key from twitter
+csecret = ''	#consumer secret from twitter
+atoken = ''	#access token from twitter
+asecret = ''	#access secret from twitter
 count = 0
 
 def internet_on():
