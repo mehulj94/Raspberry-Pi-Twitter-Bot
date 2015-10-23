@@ -7,8 +7,6 @@ ckey = ''	#consumer key from twitter
 csecret = ''	#consumer secret from twitter
 atoken = ''	#access token from twitter
 asecret = ''	#access secret from twitter
-list_hashtag = []
-new_list_hashtag = []
 count = 0
 
 def internet_on():
@@ -28,15 +26,6 @@ quotes = open('ThriveQuotes.txt','r')
 quotes = quotes.readlines()
 quotes[count] = quotes[count].decode('ascii','ignore')
 
-
-hashtag_trends = api.trends_place("1")
-
-for i in range(len(hashtag_trends[0]['trends'])):
-	list_hashtag.append(hashtag_trends[0]['trends'][i]['name'])
-
-for i in range(len(list_hashtag)):
-	if list_hashtag[i][0] == '#':
-		new_list_hashtag.append(list_hashtag[i])
 
 if internet_on() == True:
 	if len(quotes[count]) <= 136:
