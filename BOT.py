@@ -34,13 +34,18 @@ hashtag_trends = api.trends_place("1")
 for i in range(len(hashtag_trends[0]['trends'])):
 	list_hashtag.append(hashtag_trends[0]['trends'][i]['name'])
 
-for i in range(len(list_hashtag)):
-	if list_hashtag[i][0] == '#':
-		new_list_hashtag.append(list_hashtag[i])
+for j in range(len(list_hashtag)):
+	if list_hashtag[j][0] == '#':
+		new_list_hashtag.append(list_hashtag[j])
+
+for k in range(len(new_list_hashtag)):
+	if len(new_list_hashtag[k]) < 18 :
+		hashtag = new_list_hashtag[k]
+		break
 
 if internet_on() == True:
-	if len(quotes[count]) <= 136:
-		api.update_status(status = quotes[count]+'#Quotes')
+	if len(quotes[count]) <= 115:
+		api.update_status(status = quotes[count]+hashtag+'#Quotes')
 		quotes = quotes[count+2:]
 	else:
 		quotes = quotes[count+2:]
@@ -52,5 +57,7 @@ if internet_on() == True:
 
 
 	
+
+
 
 
