@@ -44,8 +44,8 @@ for k in range(len(new_list_hashtag)):
 		break
 
 if internet_on() == True:
-	if len(quotes[count]) <= 136:
-		api.update_status(status = quotes[count]+'#Quotes')
+	if len(quotes[count]) <= 115:
+		api.update_status(status = quotes[count]+hashtag+'#Quotes')
 		quotes = quotes[count+2:]
 	else:
 		quotes = quotes[count+2:]
@@ -57,5 +57,7 @@ if internet_on() == True:
 
 
 	
+
+
 
 
