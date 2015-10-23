@@ -43,8 +43,10 @@ for k in range(len(new_list_hashtag)):
 		hashtag = new_list_hashtag[k]
 		break
 
+tweet_len = len(quotes[count])+len(hashtag)+len(" #Quotes")
+
 if internet_on() == True:
-	if len(quotes[count]) <= 115:
+	if tweet_len <= 140:
 		api.update_status(status = quotes[count]+hashtag+'#Quotes')
 		quotes = quotes[count+2:]
 	else:

@@ -47,7 +47,7 @@ tweet_len = len(quotes[count])+len(hashtag)+len(" #Quotes")
 
 if internet_on() == True:
 	if tweet_len <= 140:
-		api.update_status(status = quotes[count]+hashtag+'#Quotes')
+		api.update_status(status = quotes[count] + hashtag + ' #Quotes')
 		quotes = quotes[count+2:]
 	else:
 		quotes = quotes[count+2:]
